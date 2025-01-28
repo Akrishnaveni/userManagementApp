@@ -1,0 +1,95 @@
+/* UserList.css */
+.user-list {
+    margin-top: 20px;
+    animation: tableReveal 1s ease-out;
+  }
+  
+  @keyframes tableReveal {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+    }
+  }
+  
+  table {
+     width: 100%;
+     border-collapse: collapse;
+}th, td {
+padding: 12px;
+text-align: left;
+ border-bottom: 1px solid #ddd;
+    }
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    }
+    tr:nth-child(even) {
+    background-color: #f9f9f9;
+    }
+  
+  button {
+    margin: 2px;
+    padding: 4px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input {
+    padding: 5px;
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  /* Animation for table rows */
+  tr {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Start above */
+    animation: rowReveal 0.5s ease-out forwards;
+  }
+  
+  @keyframes rowReveal {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply delay to each row */
+  tr:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  tr:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  tr:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  tr:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  tr:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  tr:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
