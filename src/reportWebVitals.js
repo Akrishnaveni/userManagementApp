@@ -1,5 +1,6 @@
-export function reportWebVitals(metric) {
-  
-  console.log(metric);
-}
+import { reportWebVitals } from './reportWebVitals';
 
+const reportWebVitals = (metric) => {
+  console.log(metric);
+};
+export default reportWebVitals;
